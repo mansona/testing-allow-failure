@@ -41,7 +41,7 @@ jobs:
         id: scenarios
         run: ./node_modules/.bin/ember try:one ${{ matrix.try-scenario }}
         continue-on-error: true
-      - uses: mainmatter/continue-on-error-comment@v1
+      - uses: mainmatter/continue-on-error-comment@logging
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           outcome: ${{ steps.scenarios.outcome }}
