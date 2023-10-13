@@ -18,7 +18,7 @@ jobs:
     timeout-minutes: 10
 
     permissions:
-      pull-requests: write
+      pull-requests: read
 
     strategy:
       fail-fast: false
