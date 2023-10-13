@@ -17,7 +17,8 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
 
-    permissions: write-all
+    permissions:
+      pull-requests: write
 
     strategy:
       fail-fast: false
